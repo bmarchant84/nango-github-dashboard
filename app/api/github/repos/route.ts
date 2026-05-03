@@ -1,6 +1,6 @@
 import { Nango } from '@nangohq/node';
 
-const secretKey = process.env.NANGO_SECRET_KEY;
+const secretKey = process.env.NANGO_SECRET_KEY!;
 const nango = new Nango({ secretKey });
 
 export async function GET(request: Request) {
